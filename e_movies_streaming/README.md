@@ -28,9 +28,8 @@ Entities and Attributes:
     Movie:
         - MovieID: Int (Primary Key, Auto-incremented)
         - Title: String
-        - Description: String
-        - ReleaseDate: Date
-        - GenreID: Foreign Key (referring to Genre)
+        - MovieIMDBID: String
+        - MovieSteamURL: String
         - AvailableRegions: String (Comma-separated values e.g., "region1, region2, region3...")
 
     Genre:
@@ -76,5 +75,5 @@ Entity Relationships:
 
 Default Values:
 
-Since this model uses only essential entities and attributes to meet the requirements, not providing default values won't be a show stopper
+Since this model uses only essential entities and attributes to meet the requirements, I can enforce non-null requirement quite easily.
 ```
