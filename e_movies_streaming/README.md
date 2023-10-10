@@ -4,6 +4,7 @@ The aim of this project was to modernize the movie rental model in Erwin. To red
 
 - Users can sign in using their phone number and receive a one-time password sent to their phone.
     - If the user's phone number isn't already in the database, they will be prompted to fill out a form with their email. The region name will then be extracted from the provided phone number using Twilio.
+    - User email prefix (the part before '@') will be used as username on the UI
 - Users can rent and stream movies available in the catalog that are also accessible in their region.
 - Payments made by users are securely stored and processed by a third-party payment provider.
 - Users can search for movies by title, genre, and actor name.
