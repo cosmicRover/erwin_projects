@@ -3,8 +3,6 @@
 The aim of this project was to modernize the movie rental model in Erwin. To reduce complexities and streamline the process, I decided to create a new model from scratch. The objective was to design a movie streaming rental service with the following features:
 
 - Users can sign in using their phone number and receive a one-time password sent to their phone.
-    - If the user's phone number isn't already in the database, they will be prompted to submit their email to sign-up. The region name will then be extracted from the provided phone number using Twilio.
-    - User email prefix (the part before '@') will be used as username on the UI
 - Users can rent and stream movies available in the catalog that are also accessible in their region.
 - Payments made by users are securely stored and processed by a third-party payment provider.
 - Users can search for movies by title, genre, and actor name.
@@ -35,8 +33,8 @@ Entities and Attributes:
     Movie:
         - MovieID: Int (Primary Key, Auto-incremented)
         - Title: String
-        - MovieIMDBID: String
-        - MovieSteamURL: String
+        - MovieIMDBID: String (used to fetch movie details from IMDB on user devices)
+        - MovieSteamURL: String (movie storage bucket link)
         - AvailableRegions: String (Comma-separated values e.g., "region1, region2, region3...")
 
     Genre:
@@ -82,4 +80,12 @@ Entity Relationships:
 Default Values:
 
 Since this model uses only essential entities and attributes to meet the requirements, I can enforce non-null requirement quite easily.
+
+Solution notes:
+
+- If the user's phone number isn't already in the database, they will be prompted to submit their email to sign-up for this service.
+- The region name will then be extracted from the provided phone number using Twilio.
+- User email prefix (the part before '@') will be used as username on the UI.
+- For a user to rent/watch a movie, the movie must be available in their region.
+- User is able to update their region by updating their phone number
 ```
