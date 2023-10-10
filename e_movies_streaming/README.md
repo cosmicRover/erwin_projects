@@ -70,7 +70,6 @@ Entity Relationships:
     - User to Rental: One-to-many (A single user can have multiple rentals, but each rental is specific to one user.)
     - Movie to Rental: One-to-many (One movie can be rented by various users, but each rental refers to a single movie.)
     - User to Payment: One-to-many (A user can make several payments, but each payment record corresponds to one user.)
-    - Movie to Genre: Many-to-one (Every movie is linked to a genre, but a genre can encompass numerous movies.)
     - Movie to Actor (via MovieActor): Many-to-many (A movie can feature several actors, and an actor can appear in multiple movies.)
     - Movie to Genre (via MovieGenre): Many-to-many (A movie can belong to several genres, and a genre can include multiple movies.)
 
