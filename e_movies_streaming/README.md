@@ -13,9 +13,9 @@ The aim of this project was to modernize the movie rental model in Erwin. To red
 ## Steps
 
 - First, I planned entities, attributes and their relationships on a textpad (detailed below).
-- Then, I implemented them on erwin Logical view.
-- After that, I worked on the bridge tables on Physical view.
-- Finally, I added formatting, added readme and uploaded to github.
+- Then, I implemented them on erwin CDM, LDM views using eMovies as a guide.
+- After that, I worked on the bridge tables for PDM.
+- Finally, I added formatting, renamed relationships, added readme and uploaded to github.
 
 ## Solution
 <img width="997" alt="Model screenshot" src="https://github.com/cosmicRover/erwin_projects/assets/41096232/27a8c7f9-7957-4efd-84f9-a008d20708b7">
