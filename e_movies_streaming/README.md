@@ -10,7 +10,12 @@ The aim of this project was to modernize the movie rental model in Erwin. To red
 - Users can search for movies by title, genre, and actor name.
 - Movie details such as description, release date, and plot summary are sourced from the IMDB API.
 
-Solution
+## Steps
+
+- First, I planned entities, attributes and their relationships on paper (detailed below)
+- Then, I implemented them on erwin Logical view
+- After that, I worked on the bridge tables on Physical view
+- Finally, I added formatting, added readme and uploaded to github
 
 ## Solution
 <img width="997" alt="Model screenshot" src="https://github.com/cosmicRover/erwin_projects/assets/41096232/27a8c7f9-7957-4efd-84f9-a008d20708b7">
