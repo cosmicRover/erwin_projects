@@ -3,19 +3,19 @@
 The aim of this project was to modernize the movie rental model in Erwin. To reduce complexities and streamline the process, I decided to create a new model from scratch. The objective was to design a movie streaming rental service with the following features:
 
 - Users can sign in using their phone number and receive a one-time password sent to their phone.
-    - If the user's phone number isn't already in the database, they will be prompted to fill out a form with their email. The region name will then be extracted from the provided phone number using Twilio.
+    - If the user's phone number isn't already in the database, they will be prompted to submit their email to sign-up. The region name will then be extracted from the provided phone number using Twilio.
     - User email prefix (the part before '@') will be used as username on the UI
 - Users can rent and stream movies available in the catalog that are also accessible in their region.
 - Payments made by users are securely stored and processed by a third-party payment provider.
 - Users can search for movies by title, genre, and actor name.
-- Movie details such as description, release date, and plot summary are sourced from the IMDB API.
+- Movie details, such as description, poster, release date, and plot summary, are fetched on demand from the IMDB API using the attribute `MovieIMDBID`.
 
 ## Steps
 
-- First, I planned entities, attributes and their relationships on paper (detailed below)
-- Then, I implemented them on erwin Logical view
-- After that, I worked on the bridge tables on Physical view
-- Finally, I added formatting, added readme and uploaded to github
+- First, I planned entities, attributes and their relationships on a textpad (detailed below).
+- Then, I implemented them on erwin Logical view.
+- After that, I worked on the bridge tables on Physical view.
+- Finally, I added formatting, added readme and uploaded to github.
 
 ## Solution
 <img width="997" alt="Model screenshot" src="https://github.com/cosmicRover/erwin_projects/assets/41096232/27a8c7f9-7957-4efd-84f9-a008d20708b7">
