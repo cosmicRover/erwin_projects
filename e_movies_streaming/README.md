@@ -16,8 +16,7 @@ The aim of this project was to modernize the movie rental model in Erwin. To red
 - Finally, I added formatting, renamed relationships, added readme and uploaded to github.
 
 ## Solution
-<img width="1075" alt="PDM screenshot" src="https://github.com/cosmicRover/erwin_projects/assets/41096232/32124edd-0362-43dd-89c3-4b625051f95d">
-
+<img width="1058" alt="PDM" src="https://github.com/cosmicRover/erwin_projects/assets/41096232/620ce53a-019c-4787-9849-b0ce31df0381">
 
 Below are the entities and their relationships for this model
 
